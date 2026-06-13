@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#d60000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:red;
+}
+
+section{
+    padding:30px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+h2{
+    color:#d60000;
+    margin-bottom:15px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#d60000;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#900000;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#d60000;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Blood Donation Management System</h1>
+    <p>Donate Blood, Save Lives</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#register">Donor Register</a>
+    <a href="#request">Blood Request</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<div class="container">
+    <h2>Welcome</h2>
+    <p>
+        Blood donation is a noble act that helps save lives.
+        Register yourself as a donor and help people in need.
+    </p>
+
+    <h3>Available Blood Groups</h3>
+
+    <table>
+        <tr>
+            <th>Blood Group</th>
+            <th>Units Available</th>
+        </tr>
+        <tr>
+            <td>A+</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>B+</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>O+</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>AB+</td>
+            <td>10</td>
+        </tr>
+    </table>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+    <h2>About Us</h2>
+    <p>
+        Our Blood Donation Management System helps connect blood donors
+        with patients who urgently need blood. We encourage healthy
+        individuals to donate blood regularly.
+    </p>
+</div>
+</section>
+
+<section id="register">
+<div class="container">
+    <h2>Donor Registration Form</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="number" placeholder="Age" required>
+
+        <select required>
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <select required>
+            <option>Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <input type="tel" placeholder="Mobile Number">
+
+        <input type="email" placeholder="Email Address">
+
+        <textarea rows="4" placeholder="Address"></textarea>
+
+        <button type="submit">Register Donor</button>
+    </form>
+</div>
+</section>
+
+<section id="request">
+<div class="container">
+    <h2>Blood Request Form</h2>
+
+    <form>
+        <input type="text" placeholder="Patient Name">
+
+        <select>
+            <option>Select Blood Group Needed</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <input type="number" placeholder="Units Required">
+
+        <input type="tel" placeholder="Contact Number">
+
+        <textarea rows="4" placeholder="Hospital Address"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+    <h2>Contact Us</h2>
+
+    <p><b>Address:</b> Pune, Maharashtra</p>
+    <p><b>Phone:</b> +91 9876543210</p>
+    <p><b>Email:</b> blooddonation@gmail.com</p>
+
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Blood Donation Management System | Developed by Nikhil Wahurwagh</p>
+</footer>
+
+</body>
+</html>
